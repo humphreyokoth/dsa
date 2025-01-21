@@ -81,3 +81,13 @@
 
 # 1. Start from the head node
 # 2. Traverse the linked list until we reach the last node
+
+
+
+# singly linked list implementation
+class Node :
+    
+     def __init__(self,data):
+          self.data = data
+          self.ref = None
+ 
