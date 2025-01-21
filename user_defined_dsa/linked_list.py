@@ -6,7 +6,7 @@
 # its a dynamic data structure
 # it is not stored in contiguous memory location. It is stored in random memory locations
 
-# Advantages of linked list 
+# Advantages of linked list
 # 1. Dynamic data structure
 # 2. Memory utilization is efficient
 # 3. Insertion and deletion of elements are easy
@@ -45,13 +45,13 @@
 # singly linked list is not nested dictionary
 # singly linked list is not nested set
 
-# Operations 
+# Operations
 # 1. Insertion
 # 2. Deletion
 # 3. Traversing
 
 
-# Adding elements to the linked list 
+# Adding elements to the linked list
 # 1. At the beginning of the linked list
 # 2. At the end of the linked list
 # 3. At the middle or inbetween of the linked list
@@ -61,7 +61,7 @@
 # 2.Change new node next to head
 # 3.Point head to the new node
 
-# Add element to the end of a linked list 
+# Add element to the end of a linked list
 # 1. Create a node
 # 2. Go to the last node
 # 3. Change the next of the last node to the new node
@@ -76,18 +76,39 @@
 # 3. At the middle or inbetween of the linked list
 
 
-
 # Traverse the linked list
 
 # 1. Start from the head node
 # 2. Traverse the linked list until we reach the last node
 
 
-
 # singly linked list implementation
-class Node :
-    
-     def __init__(self,data):
-          self.data = data
-          self.ref = None
- 
+class Node:
+
+    def __init__(self, data):
+        self.data = data
+        self.ref = None
+
+
+""""
+Travesal of the linked list
+"""
+
+
+class LinkedList:
+
+    def __init__(self):
+        self.head = None
+
+    def print_LL(self):
+        if self.head is None:
+            print("Linked list is empty")
+        else:
+            n = self.head
+            while n is not None:
+                print(n.data)
+                n = n.ref
+
+
+LL1 = LinkedList()
+LL1.print_LL()
