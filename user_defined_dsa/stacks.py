@@ -55,39 +55,24 @@ print(stack[-1])
 stack.clear()
 print(stack)
 print(len(stack) == 0)
-# stack implementation using deque
-from collections import deque
-stack = deque()
-stack.append(1)
-stack.append(2)
-stack.append(3)
-stack.append(4)
-stack.append(5)
+
+
+
+# implementing stacks using lists and modules 
+
+# push we use append
+# pop we use pop
+# peek we use [-1]
+# is_empty we use len(stack) == 0
+# size we use len(stack)
+# top we use [-1]
+# clear we use clear()
+
+# stack implementation using list
+stack = []
+stack.append(10)
+stack.append(20)
+stack.append(30)
+stack.append(40)
+stack.append(50)
 print(stack)
-stack.pop()
-print(stack)
-print(stack[-1])
-print(len(stack) == 0)
-print(len(stack))
-print(stack[-1])
-stack.clear()
-print(stack)
-print(len(stack) == 0)
-# stack implementation using queue module
-from queue import LifoQueue
-stack = LifoQueue(maxsize=3)
-stack.put(1)
-stack.put(2)
-stack.put(3)
-stack.put(4)
-stack.put(5)
-print(stack)
-stack.get()
-print(stack)
-print(stack.qsize())
-print(stack.empty())
-print(stack.full())
-print(stack.get())
-print(stack.get())
-print(stack.get())
-print(stack.get())
