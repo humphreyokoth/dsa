@@ -68,3 +68,79 @@ while True:
     else:
         print("Enter the correct operation")    
     
+
+# 2. Using collections 
+# deque is a double-ended queue. It can be used to add or remove elements from both ends.
+# deque is a part of the collections module.
+
+import collections
+q = collections.deque()
+
+print(q)
+# adding elements to the queue
+q.appendleft(10)
+
+q.appendleft(20)
+
+q.appendleft(30)
+
+print(q)
+# removing the first element
+q.pop()
+print(q)
+
+q.pop()
+
+print(q)
+
+# adding elements to the queue
+q.append(10)
+
+q.append(20)
+q.append(30)
+print(q)
+
+# removing the first element
+q.popleft()
+print(q)
+
+
+# 3. Using queue module
+# queue is a linear data structure where the elements are added at the end and removed from the front
+# queue where the first element added is called back /rear/tail and the last element added is called front/head
+# LILO methodology that is last in last out
+
+import queue
+
+q = queue.Queue()
+
+q.put(10)
+
+q.put(20)
+
+q.put(30)
+
+print(q)
+# removing the first element
+q.get()
+print(q)
+q.get()
+
+print(q)
+
+
+
+#  queue class 
+
+
+q= queue.Queue()
+q.put(10)
+q.put(20)
+q.put(30)
+q.put(40)
+print(q)
+q.get()
+print(q)
+q.get()
+print(q)
+
