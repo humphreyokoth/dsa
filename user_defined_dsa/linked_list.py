@@ -149,6 +149,24 @@ class LinkedList:
                 n = n.ref
             n.ref = new_node
 
+# Add node inbetween two nodes in the linked list
+    
+    def add_after(self,data,x):
+        n = self.head
+        while n is not None:
+            if x == n.data:
+                break
+            n = n.ref
+        if n is None:
+            print("Node is not present in the linked list")
+        else:
+            new_node = Node(data)
+            new_node.ref = n.ref
+            n.ref = new_node
+
+        
+
+
 
 
 
@@ -157,5 +175,6 @@ LL1.add_begin(10)
 LL1.add_end(100)
 LL1.add_end(200)
 LL1.add_begin(20)
+LL1.add_after(30, 100)
 LL1.print_LL()
 
