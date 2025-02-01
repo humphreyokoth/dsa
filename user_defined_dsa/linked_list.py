@@ -201,11 +201,13 @@ class LinkedList:
 
 
 LL1 = LinkedList()
-LL1.add_begin(10)
-LL1.add_end(100)
-LL1.add_end(200)
-LL1.add_begin(20)
-LL1.add_after(30, 100)
-LL1.add_before(40, 100)
+# LL1.add_begin(10)
+# LL1.add_end(100)
+# LL1.add_end(200)
+# LL1.add_begin(20)
+# LL1.add_after(30, 100)
+# LL1.add_before(40, 100)
+LL1.insert_empty(10)
+LL1.insert_empty(50)
 LL1.print_LL()
 
