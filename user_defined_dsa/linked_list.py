@@ -197,5 +197,6 @@ LL1.add_end(100)
 LL1.add_end(200)
 LL1.add_begin(20)
 LL1.add_after(30, 100)
+LL1.add_before(40, 100)
 LL1.print_LL()
 
