@@ -233,7 +233,16 @@ class LinkedList:
             n.ref = n.ref.ref
 
 
+# Doubely linked list 
 
+def add_begin(self, data):
+    new_node = Node(data)
+    new_node.ref = self.head
+    if self.head is not None:
+        self.head.prev = new_node
+    self.head = new_node
+    new_node.prev = None
+    
 
 LL1 = LinkedList()
 LL1.add_begin(10)
