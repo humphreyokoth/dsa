@@ -8,7 +8,8 @@ class Node:
 class doublyLL:
     def __init__(self):
         self.head = None
-    
+
+# Traversal of the linked list 
     def print_LL(self):
         if self.head is None:
             print("Linked list is empty")
@@ -18,7 +19,7 @@ class doublyLL:
                 print(n.data, "---->", end = "")
                 n = n.nref
     
-
+# Traversal of the linked list in reverse order
     def print_LL_reverse(self):
         if self.head is None:
             print("Linked list is empty")
@@ -29,6 +30,14 @@ class doublyLL:
             while n is not None:
                 print(n.data, "---->", end = "")
                 n = n.pref
+
+# Insert  when empty
+    def insert_empty(self, data):
+        if self.head is None:
+            new_node = Node(data)
+            self.head = new_node
+        else:
+            print("Linked list is not empty")
 
 dl1 =   doublyLL()
 dl1.print_LL()
